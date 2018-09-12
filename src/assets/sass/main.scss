@@ -1,0 +1,37 @@
+$types:
+        grass #9bcc50,
+        poison #b97fc9,
+        fire #fd7d24,
+        water #4592c4,
+        bug #729f3f,
+        normal #a4acaf,
+        electric #eed535,
+        rock #a38c21,
+        fairy #fdb9e9,
+        fighting #d56723,
+        psychic #f366b9,
+        ice #51c4e7,
+        ghost #7b62a3;
+
+@each $type in $types {
+  $key: nth($type, 1);
+  $value: nth($type, 2);
+
+  .#{$key}:not(body) {
+    background-color: $value;
+  }
+}
+
+.disabled {
+  background: #cccccc !important;
+}
+
+.flying {
+  background: #3dc7ef linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+}
+.dragon {
+  background: #53a4cf linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+}
+.ground {
+  background: #f7de3f linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+}
