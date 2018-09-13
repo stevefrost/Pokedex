@@ -1,4 +1,4 @@
-# techtest
+# Pokedex
 
 ## Project setup
 ```
